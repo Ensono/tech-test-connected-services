@@ -15,17 +15,17 @@ See this link for how to set a bearer token in an HTTP header. https://developer
 
 Calling the token service will provide a valid token which can be used to call the user REST api.
 
-* Url: http://amido-tech-test.herokuapp.com/token • Verb: GET
+* Url: [[http://amido-tech-test.herokuapp.com/token](http://ensono-cs-tech-test.bvbxbnhyamggc0cn.westeurope.azurecontainer.io:7000/token)](http://ensono-cs-tech-test.bvbxbnhyamggc0cn.westeurope.azurecontainer.io:7000/token) • Verb: GET
 
 ### Create User Service
 When creating a User, the name must be "Joe" and the password "MyCurrentPassword." The service endpoint below can be called to create a user. The new user URL will be returned in the relevant response header.
 
-* URL: http://amido-tech-test.herokuapp.com/users • Verb: POST • Parameters: name, password (posted as form data)
+* URL: [http://ensono-cs-tech-test.bvbxbnhyamggc0cn.westeurope.azurecontainer.io:7000/users](http://ensono-cs-tech-test.bvbxbnhyamggc0cn.westeurope.azurecontainer.io:7000/users) • Verb: POST • Parameters: name, password (posted as form data)
 
 Get, Update and Delete a User Service
 This service endpoint can be called with the relevant verb to get, update or delete a user. Note that when updating a password, the new password should be MyNewPassword
 
-* URL: http://amido-tech-test.herokuapp.com/users/{UserId} • Verb: GET, PUT, DELETE • Parameters: name, password (posted as form data)
+* URL: [http://ensono-cs-tech-test.bvbxbnhyamggc0cn.westeurope.azurecontainer.io:7000/users/{UserId} • Verb: GET, PUT, DELETE • Parameters: name, password (posted as form data)
 
 ## User Stories to Test
 Please test the following user stories.
