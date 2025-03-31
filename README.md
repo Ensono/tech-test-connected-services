@@ -25,7 +25,7 @@ When creating a User, the name must be "Joe" and the password "MyCurrentPassword
 Get, Update and Delete a User Service
 This service endpoint can be called with the relevant verb to get, update or delete a user. Note that when updating a password, the new password should be MyNewPassword
 
-* URL: [http://ensono-cs-tech-test.bvbxbnhyamggc0cn.westeurope.azurecontainer.io:7000/users/{UserId} • Verb: GET, PUT, DELETE • Parameters: name, password (posted as form data)
+* URL: [http://ensono-test.hyhrfebuhvd2eueh.westeurope.azurecontainer.io:7000/users/{UserId}](http://ensono-test.hyhrfebuhvd2eueh.westeurope.azurecontainer.io:7000/users/1234) • Verb: GET, PUT, DELETE • Parameters: name, password (posted as form data)
 
 ## User Stories to Test
 Please test the following user stories.
