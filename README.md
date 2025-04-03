@@ -15,7 +15,7 @@ See this link for how to set a bearer token in an HTTP header. https://developer
 
 Calling the token service will provide a valid token which can be used to call the user REST api.
 
-* Url: [http://ensono-test.hyhrfebuhvd2eueh.westeurope.azurecontainer.io:7000/token](http://ensono-test.hyhrfebuhvd2eueh.westeurope.azurecontainer.io:7000/token)] • Verb: GET
+* Url: [http://ensono-test.hyhrfebuhvd2eueh.westeurope.azurecontainer.io:7000/token](http://ensono-test.hyhrfebuhvd2eueh.westeurope.azurecontainer.io:7000/token) • Verb: GET
 
 ### Create User Service
 When creating a User, the name must be "Joe" and the password "MyCurrentPassword." The service endpoint below can be called to create a user. The new user URL will be returned in the relevant response header.
