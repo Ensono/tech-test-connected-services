@@ -11,26 +11,26 @@ All calls to the endpoint require an auth token in the header in the format _bea
 
 ```Authorization: bearer 12345678```
 
-See this link for how to set a bearer token in an HTTP header. https://developers.google.com/gmail/markup/actions/verifying-bearer-tokens - you do not need to verify the token, just submit it with every request.
+See [this link](https://developers.google.com/gmail/markup/actions/verifying-bearer-tokens) for how to set a bearer token in an HTTP header. You do not need to verify the token, just submit it with every request.
 
 Calling the token service will provide a valid token which can be used to call the user REST api.
 
-* Url: [http://ensono-test.hyhrfebuhvd2eueh.westeurope.azurecontainer.io:7000/token](http://ensono-test.hyhrfebuhvd2eueh.westeurope.azurecontainer.io:7000/token)
-* Verb: GET
+* **URL:** [http://ensono-test.hyhrfebuhvd2eueh.westeurope.azurecontainer.io:7000/token](http://ensono-test.hyhrfebuhvd2eueh.westeurope.azurecontainer.io:7000/token)
+* **Verb:** GET
 
 ### Create User Service
 When creating a User, the name must be "Joe" and the password "MyCurrentPassword." The service endpoint below can be called to create a user. The new user URL will be returned in the relevant response header.
 
-* URL: [http://ensono-test.hyhrfebuhvd2eueh.westeurope.azurecontainer.io:7000/users](http://ensono-test.hyhrfebuhvd2eueh.westeurope.azurecontainer.io:7000/users)
-* Verb: POST
-* Parameters: name, password (posted as form data)
+* **URL:** [http://ensono-test.hyhrfebuhvd2eueh.westeurope.azurecontainer.io:7000/users](http://ensono-test.hyhrfebuhvd2eueh.westeurope.azurecontainer.io:7000/users)
+* **Verb:** POST
+* **Parameters:** name, password (posted as form data)
 
-Get, Update and Delete a User Service
+### Get, Update and Delete a User Service
 This service endpoint can be called with the relevant verb to get, update or delete a user. Note that when updating a password, the new password should be MyNewPassword
 
-* URL: [http://ensono-test.hyhrfebuhvd2eueh.westeurope.azurecontainer.io:7000/users/{UserId}](http://ensono-test.hyhrfebuhvd2eueh.westeurope.azurecontainer.io:7000/users/1234)
-* Verb: GET, PUT, DELETE
-* Parameters: name, password (posted as form data)
+* **URL:** [http://ensono-test.hyhrfebuhvd2eueh.westeurope.azurecontainer.io:7000/users/{UserId}](http://ensono-test.hyhrfebuhvd2eueh.westeurope.azurecontainer.io:7000/users/1234)
+* **Verb:** GET, PUT, DELETE
+* **Parameters:** name, password (posted as form data)
 
 ## User Stories to Test
 Please test the following user stories.
